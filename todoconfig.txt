@@ -1,0 +1,9 @@
+1/ ajouter la dependance dans le pom.xml
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+</dependency>
+2/ dans le main ajouter l'annotation @EnableDiscoveryClient
+-- pour l'instant assure on lui donne le code mais on ne pas lui donner l'adresse--
+3/ dans le git, dans microservices-assure.properties, on ajouter :
+eureka.client.serviceUrl.defaultZone=http://localhost:9001/eureka/
